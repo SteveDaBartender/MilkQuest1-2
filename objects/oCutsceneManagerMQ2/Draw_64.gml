@@ -1,0 +1,15 @@
+/// @description Insert description here
+// You can write your code in this editor
+draw_sprite(bg,0,0,-50);
+if (char1anim = sConeheadCutsceneMQ2) {
+	draw_sprite_ext(char1anim,char1Frame,190,265,-0.75,0.75,0,c_white,1);
+} else draw_sprite(char1anim,char1Frame,100,235);
+if (char2anim = sConeheadCutsceneMQ2) {
+	draw_sprite_ext(char2anim,char2Frame,330,265,0.75,0.75,0,c_white,1);
+} else draw_sprite_ext(char2anim,char2Frame,470,235,-1,1,0,c_white,1);
+if (cut != 4) {
+	draw_rectangle_color(0,435,540,540,c_white,c_white,c_white,c_white,false);
+	draw_rectangle_color(0,435,540,540,c_blue,c_blue,c_blue,c_blue,true);
+}
+draw_text_ext_color(30,440,ctxt,30,480,c_black,c_black,c_black,c_black,1);
+draw_rectangle_color(541,0,9999,9999,c_black,c_black,c_black,c_black,false);
