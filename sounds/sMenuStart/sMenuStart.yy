@@ -11,8 +11,8 @@
     "name": "SFX",
     "path": "audiogroups/SFX",
   },
-  "soundFile": "sMenuStart.wav",
-  "duration": 1.34263,
+  "soundFile": "sMenuStart.mp3",
+  "duration": 2.5339,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

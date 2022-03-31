@@ -12,7 +12,7 @@
     "path": "audiogroups/SFX",
   },
   "soundFile": "sSpring",
-  "duration": 0.596769,
+  "duration": 0.591769,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",
