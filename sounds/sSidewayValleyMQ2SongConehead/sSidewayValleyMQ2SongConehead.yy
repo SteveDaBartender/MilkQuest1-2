@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 3,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -12,7 +12,7 @@
     "path": "audiogroups/Music",
   },
   "soundFile": "sSidewayValleyMQ2SongConehead.mp3",
-  "duration": 51.773,
+  "duration": 51.768,
   "parent": {
     "name": "Milk Quest 2 Levels",
     "path": "folders/Sounds/Music/Milk Quest 2 Levels.yy",

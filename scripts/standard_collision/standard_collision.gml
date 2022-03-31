@@ -119,8 +119,6 @@ function standard_collision() {
 		audio_sound_gain(global.currentSong, 0, 0,);
 		if (!audio_is_playing(sDrowning)) audio_play_sound(sDrowning,1,false);
 	} else {
-		audio_sound_gain(global.currentSong, 1, 300);
-		audio_stop_sound(sDrowning);
 	}
 	if (drownTimer > 2600) {
 		damage_character();

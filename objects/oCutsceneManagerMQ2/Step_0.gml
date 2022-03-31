@@ -1,3 +1,4 @@
+if live_call() return live_result;
 //this code is copied from MQ2 and just edited to work with gms so its really shit
 //not even gonna bother commenting this mess, its quick and dirty
   if (cut == 2 || cut == 3) && global.character = oConeheadMQ2 {
@@ -226,10 +227,55 @@ if (cut == 3 && global.character = oConeheadMQ2) {
       ctxt = "im glad i was able to escape the fire. small issue though i live in the city";
     } 
     if (step == 2) {
-      char1Frame = (5)
+	  char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (0)
+	  char2Frame = (3)
       ctxt = "Hey, Spider Guy, you live in the city??";
     }
     if (step == 3) {
+	  char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (1)
+	  char2Frame = (2)
+      ctxt = "well i did. some dude just came in and burned the whole thing down.";
+    }
+    if (step == 4) {
+	  char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (2)
+	  char2Frame = (4)
+      ctxt = "Oh uh-- That sucks!! I'm sorry... where are you gonna live now??";
+    }
+    if (step == 5) {
+	char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (1)
+	  char2Frame = (0)
+      ctxt = "i dunno man... i really dont know anyone who i can chill with...";
+    }
+    if (step == 6) {
+			char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (0)
+	  char2Frame = (2)
+      ctxt = "Well, I don't think my parents would like you coming with me... Hey wait!!";
+    }
+    if (step == 7) {
+					char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (3)
+	  char2Frame = (3)
+      ctxt = "There's a cardboard box I thew out just up ahead! You can sleep there for awhile";
+    }
+    if (step == 8) {
+		char1anim = (sConeheadCutsceneMQ2);
+      char2anim = (sKidCutsceneMQ2);
+      char1Frame = (2)
+	  char2Frame = (1)
+      ctxt = "if thats what my life has come to, then i guess i will. thanks i guess, see ya around.";
+    }
+    if (step == 9) {
       change_room(rFutureSpaceMQ2,0,0,true,global.character);
     }
   }

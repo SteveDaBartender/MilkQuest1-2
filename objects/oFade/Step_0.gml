@@ -9,7 +9,7 @@ switch state {
 		break;
 	case 1:
 	 image_alpha += spd;
-	 audio_sound_gain(sMenu,0,1000);
+	 if (destination != rSettings && destination != rMainMenu) audio_sound_gain(sMenu,0,1000);
 	 if (image_alpha > 1) state = 2;
 	 break;
 	 case 2:

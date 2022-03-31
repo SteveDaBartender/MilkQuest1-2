@@ -8,21 +8,12 @@ global.debug = false;
 global.gameLock = false;
 global.spawnX = false;
 global.spawnY = false;
-global.currentSong = sTitleScreenMQ2;
+global.currentSong = sMenu
 global.saveNumber = 1337;
 global.intro = false;
-global.unlockConehead = false;
-global.unlockKid = false;
 global.milkGrabMode = 0;
+global.cheats = false;
 
-global.finished = false;
-global.head = false;
-global.leg = false;
-global.arm = false;
-global.body = false;
-global.besttime = 999999;
-
-global.toppyDialogue = "none";
 alt = 0;
 
 

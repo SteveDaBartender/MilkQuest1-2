@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*
 draw_text(5,25,string(count));
 draw_text(5,45,string(cursorPos));
 draw_text(5,65,string(screen));
+*/
 //STATE MACHINE ???
 switch screen {
 	case 0:

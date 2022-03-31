@@ -12,9 +12,9 @@ saveSlot = 0;
 //will rpobably be used to reset savefiles between updates.
 saveVersion = 0.1;
 
-rousr_dissonance_create(919686300548890635);
-rousr_dissonance_set_details("In Menus");
-rousr_dissonance_set_state("Choosing a Game");
-
-audio_group_load(Music);
-audio_group_load(SFX);
+if (os_browser = browser_not_a_browser) {
+	show_debug_message("Enabling RPS")
+	rousr_dissonance_create(919686300548890635);
+	rousr_dissonance_set_details("In Menus");
+	rousr_dissonance_set_state("Choosing a Game");
+}

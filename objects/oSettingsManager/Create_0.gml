@@ -2,10 +2,10 @@ if live_call() return live_result;
 /// @description Insert description here
 // You can write your code in this editor
 songList = [
-	[sMenu,"True Milkman"],
+	[sMenu,"A New Morning... in Aether"],
 	[sChapter1,"Milkless"],
-	[sChapter2,"Chapter 2 Part 1"],
-	[sChapter3,"Chapter 2 Part 2"],
+	[sChapter2,"The Milk Void"],
+	[sChapter3,"Encounter with the Idiot"],
 	[sTitleScreenMQ2,"Intro"],
 	[sSidewayValleyMQ2Song,"Sideway Valley"],
 	[sCuriousCarnivalMQ2Song,"Curious Carnival"],
@@ -22,6 +22,8 @@ pitch = 1;
 songId = 0;
 
 rotationStep = 0;
+
+gameVer = os_browser;
 
 cursorPos = 0;
 selX1=0;

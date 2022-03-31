@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-audio_sound_gain(sMenu,1,1);
+if (room = rMainMenu) audio_sound_gain(sMenu,global.volMus,1);
 alpha = 1;
 spd = 0.01;
 destination = "none";

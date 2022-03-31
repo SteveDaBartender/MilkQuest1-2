@@ -5,15 +5,19 @@ and that Mario must take a bus to the next stage. In the Mushroom Kingdom, buses
 operate on an oddly specific schedule, such that every 21 frames a bus departs. 
 When Mario reaches the end of a stage, he must wait for the next bus to depart.*/
 if (key_up && cool > 21) {
-	cursorPos = clamp(cursorPos-1,0,3);
+	cursorPos = clamp(cursorPos-1,0,4);
 	cool = 0;
 }
 if (key_ddown && cool > 21) {
-	cursorPos = clamp(cursorPos+1,0,3);
+	cursorPos = clamp(cursorPos+1,0,4);
 	cool = 0;
 }
 //increment the cooldown
 cool++;
+
+//this is in step for debug reasons :)
+//gameVer = os_browser;
+//gameVer = browser_not_a_browser;
 
 selX1 = selX1 + (goalX1-selX1)/10;
 selX2 = selX2 + (goalX2-selX2)/10;
@@ -28,6 +32,7 @@ switch (cursorPos) {
 		goalY2=50
 		if (key_space_press) {
 			oFade.state = 1;
+			audio_sound_gain(currentlyPlaying,0,500);
 			oFade.destination = rMainMenu;
 		}
 		break;
@@ -56,6 +61,23 @@ switch (cursorPos) {
 		audio_group_set_gain(SFX,global.volSFX,0)
 		break;
 	case 3:
+		goalX1=16
+		goalX2=272
+		goalY2=228
+		goalY1=200
+		if (gameVer = browser_not_a_browser) {
+			if (key_space_press) {
+				if (window_get_fullscreen()) {
+					window_set_fullscreen(false);
+				}else {
+					window_set_fullscreen(true);
+				}
+			}
+		} else {
+			
+		}
+		break;
+	case 4:
 		goalX1=304
 		goalX2=528
 		goalY1=240

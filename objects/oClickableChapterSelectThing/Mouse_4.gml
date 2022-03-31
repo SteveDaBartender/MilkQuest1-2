@@ -4,7 +4,8 @@
 //lol this is shit but i dont want to make this anymore :O)
 switch chapter {
 	case 0:
-		room_goto(rMainMenu);
+			oFade.state = 1;
+			oFade.destination = rMainMenu;
 		break;
 	case 1:
 		oMilkQuest1.screen = 1;

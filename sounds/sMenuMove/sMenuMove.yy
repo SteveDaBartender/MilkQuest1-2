@@ -12,7 +12,7 @@
     "path": "audiogroups/SFX",
   },
   "soundFile": "sMenuMove.wav",
-  "duration": 0.325375,
+  "duration": 0.320375,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

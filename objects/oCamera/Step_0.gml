@@ -2,7 +2,7 @@
 step++;
 randomObj = global.globalTimer;
 global.globalTimer++;
-
+if (global.cheats) {
 	if (keyboard_check_pressed(ord("K")) && room_exists(room_next(room))) {
 		room_goto(room_next(room));
 		audio_stop_all();
@@ -13,7 +13,7 @@ global.globalTimer++;
 		audio_stop_all();
 		//global.character = oFezhead;
 	}	
-
+}
 /*
 if (true) { 
 	scr_CRT_appy_to_surface(application_surface, view_camera[0]);
@@ -22,10 +22,7 @@ if (true) {
 display_set_gui_size(window_get_width(), window_get_height());
 display_set_gui_maximise();
 */
-//alternate level select for demos
-if (keyboard_check(ord("P")) && keyboard_check(ord("O"))) {
-	change_room(rLevelSelect, 0, 0, true, 0);	
-}
+
 
 //buncha different resolutions the game can run in
 switch global.resolution {

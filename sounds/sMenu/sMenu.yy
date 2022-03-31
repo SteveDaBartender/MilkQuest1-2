@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
-  "compression": 0,
-  "volume": 1.0,
+  "compression": 1,
+  "volume": 0.45,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/Music",
   },
   "soundFile": "sMenu.ogg",
-  "duration": 13.241066,
+  "duration": 99.92816,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

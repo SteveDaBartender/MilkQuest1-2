@@ -1,2 +1,0 @@
-destination = rChristmasHub;
-stop = true;

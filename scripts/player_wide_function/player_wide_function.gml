@@ -52,14 +52,14 @@ function player_wide_function() {
 	if (place_meeting(x,y, oSpring)) {
 		vsp = -20;
 		global.character.roll = false;
-		if (room != rCuriousCarnivalMQ2) audio_play_sound(sSpring, 0, false);
+		if (room = rCuriousCarnivalMQ2 && x>2300) vsp = -40; //spaghet
 	}
 	
 	//bumper check :)
 	if (place_meeting(x+hsp,y+vsp,oBumper)) {
 	
-		acl = -4*(hsp/3);
-		vsp = -15*sign(vsp);
+		acl = -3.2*(hsp/3);
+		vsp = -17.5*sign(vsp);
 		audio_play_sound(sSpring, 0, false);
 		roll = false;
 	}
@@ -100,7 +100,7 @@ function player_wide_function() {
 	} else audio_stop_sound(sFunnyRun);
 	
 	//change color if HP is 1
-	if (global.character.key_debug && !npc) {
+	if (global.character.key_debug && !npc && global.cheats) {
 		if (!global.debug) global.debug = true;
 		else global.debug = false;	
 	}

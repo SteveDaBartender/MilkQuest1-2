@@ -11,8 +11,8 @@
     "name": "SFX",
     "path": "audiogroups/SFX",
   },
-  "soundFile": "sSuperSecretFullStorySoundEffectDONOTLEAK.mp3",
-  "duration": 1.28,
+  "soundFile": "sSuperSecretFullStorySoundEffectDONOTLEAK.wav",
+  "duration": 0.808073,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

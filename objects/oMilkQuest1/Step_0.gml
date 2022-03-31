@@ -24,7 +24,9 @@ switch (screen) {
 		if (count > 0) {
 			switch (cursorPos) {
 				case 0:
-					room_goto(rMainMenu);
+				count = -100;
+					oFade.state = 1;
+					oFade.destination = rMainMenu;
 					break;
 				case 1:
 					screen = 1;

@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 3,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -12,7 +12,7 @@
     "path": "audiogroups/Music",
   },
   "soundFile": "sTitleScreenMQ2.mp3",
-  "duration": 33.349,
+  "duration": 33.344,
   "parent": {
     "name": "Milk Quest 2 Levels",
     "path": "folders/Sounds/Music/Milk Quest 2 Levels.yy",
