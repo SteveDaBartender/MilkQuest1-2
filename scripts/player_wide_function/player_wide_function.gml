@@ -1,9 +1,9 @@
 function player_wide_function() {
 	
 	//room_speed = 50; if you wanna play in 50hz like a loser
-	if(keyboard_check_pressed(ord("R"))) {
-	hp = 0;
-	damage_character();
+	if(keyboard_check_pressed(ord("R"))and global.cheats) {
+		hp = 0;
+		damage_character();
 	}
 	
 
@@ -15,8 +15,10 @@ function player_wide_function() {
 	//destroy character if below map
 	if (y > room_height && !npc) {
 		if (global.character = oConeheadMQ2 || global.character = oFezheadMQ2) {
-			if (os_browser = browser_not_a_browser) room_restart();
-			else {
+			if (os_browser = browser_not_a_browser) {
+				room_restart();
+				reset_falling_platforms();
+			} else {
 				hp = 0;
 				damage_character();
 				reset_falling_platforms();

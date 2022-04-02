@@ -4,7 +4,7 @@ step++;
 if (!audio_is_playing(sMenu) && audio_group_is_loaded(Music)) {
 	audio_play_sound(sMenu,0,true);
 }
-if keyboard_check_pressed(vk_home) {
+if keyboard_check_pressed(vk_end) {
 	global.cheats = true	
 	audio_play_sound(sSuperSecretFullStorySoundEffectDONOTLEAK,0,false)
 }
