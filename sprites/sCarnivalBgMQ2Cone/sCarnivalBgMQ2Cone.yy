@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sCarnivalBgMQ2Cone",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"68af8e26-8231-4772-a620-a3fc34bacfe2","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68af8e26-8231-4772-a620-a3fc34bacfe2","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},"LayerId":{"name":"dd0f2ee5-17b5-49bf-b2ba-71dcd7e5ada1","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sCarnivalBgMQ2Cone","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},"resourceVersion":"1.0","name":"68af8e26-8231-4772-a620-a3fc34bacfe2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68af8e26-8231-4772-a620-a3fc34bacfe2",},
   ],
   "sequence": {
-    "spriteId": {"name":"sCarnivalBgMQ2Cone","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sCarnivalBgMQ2Cone",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0b3b41e6-3478-47da-a922-5812702d120f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68af8e26-8231-4772-a620-a3fc34bacfe2","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sCarnivalBgMQ2Cone","path":"sprites/sCarnivalBgMQ2Cone/sCarnivalBgMQ2Cone.yy",},
-    "resourceVersion": "1.3",
-    "name": "sCarnivalBgMQ2Cone",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dd0f2ee5-17b5-49bf-b2ba-71dcd7e5ada1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dd0f2ee5-17b5-49bf-b2ba-71dcd7e5ada1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Milk Quest 2",
     "path": "folders/Sprites/Milk Quest 2.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sCarnivalBgMQ2Cone",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
