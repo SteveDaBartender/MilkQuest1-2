@@ -1,4 +1,4 @@
-if live_call() return live_result;
+
 getInput()
 /*Imagine that the castle Mario walks into at the end of each stage is a bus station, 
 and that Mario must take a bus to the next stage. In the Mushroom Kingdom, buses 
@@ -41,6 +41,7 @@ switch (cursorPos) {
 			oFade.state = 1;
 			audio_sound_gain(currentlyPlaying,0,500);
 			oFade.destination = rMainMenu;
+			save_game_data();
 		}
 		break;
 	case 1:

@@ -1,4 +1,4 @@
-if live_call() return live_result;
+
 //this code is copied from MQ2 and just edited to work with gms so its really shit
 //not even gonna bother commenting this mess, its quick and dirty
   if (cut == 2 || cut == 3) && global.character = oConeheadMQ2 {
@@ -302,13 +302,17 @@ if (cut == 4 && global.character = oFezheadMQ2) {
 		char1anim = (sNone);
 		ctxt = ""
 		global.debug = false;
-		save_game_data_MQ2();
+		save_game_data();
 		room_goto(rTitleSreenMQ2);
 	}
  }
  //conehead will have a unique end screen, soon:tm:
 if (cut == 4 && global.character = oConeheadMQ2) {
 	if (step == 1) {
+		
+		global.beatMQ2 = 1;
+		save_game_data();
+		
 		bg =(sEndScreenBgMQ2);
 		char1anim = (sNone);
 		var carryZero = "";
@@ -318,18 +322,17 @@ if (cut == 4 && global.character = oConeheadMQ2) {
 		if (string_length(round(seconds)) = 1) carryZero = "0";
 		var displaymins = string_format(minutes, 2, 0);  
 		var displaysecs = string_digits(string_format(seconds, 2, 0)); 
-		/*ctxt = "       You beat the Game In: " + string(displaymins) + ":" + carryZero + string(displaysecs)
+		ctxt = "       You beat the Game In: " + string(displaymins) + ":" + carryZero + string(displaysecs)
 		if (global.bestFezTime >= global.levelTimer) {
 			global.bestFezTime = global.levelTimer;
 			ctxt += ". /nThat's a new record!"
-		}*/ ctxt = "";
+		} ctxt = "";
 	}
 	if (step == 2) {
 		bg =(sEndScreenBgMQ2);
 		char1anim = (sNone);
 		ctxt = ""
 		global.debug = false;
-		save_game_data_MQ2();
 		room_goto(rTitleSreenMQ2);
 	}
  }

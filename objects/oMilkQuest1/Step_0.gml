@@ -139,6 +139,8 @@ switch (screen) {
 		rousr_dissonance_set_details("Playing Milk Quest 1");
 		rousr_dissonance_set_state("Ending");
 			txt = "win state";
+			global.beatMQ1 = 1;
+			save_game_data();
 		if (count > 1) {
 			screen = 0;
 			count = 0;

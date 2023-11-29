@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if live_call() return live_result;
+
 draw_set_alpha(0.5)
 draw_set_color(make_color_rgb(50,50,50))
 var off = 0

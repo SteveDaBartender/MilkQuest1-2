@@ -1,4 +1,4 @@
-if live_call() return live_result;
+
 //MARIO JOKE GOES HERE
 getInput()
 if (key_left && cool > 21) {

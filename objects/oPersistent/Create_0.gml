@@ -18,3 +18,11 @@ if (os_browser = browser_not_a_browser) {
 	rousr_dissonance_set_details("In Menus");
 	rousr_dissonance_set_state("Choosing a Game");
 }
+
+global.fezBestTime = 0;
+global.coneBestTime = 0;
+
+global.beatMQ1 = 0;
+global.beatMQ2 = 0;
+
+load_game_data();

@@ -1,4 +1,4 @@
-if live_call() return live_result;
+
 //set colors
 draw_set_alpha(0.6);
 draw_set_color(c_black);

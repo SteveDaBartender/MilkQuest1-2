@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "dFishWin",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Cutscenes",
     "path": "folders/Scripts/Cutscenes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "dFishWin",
-  "tags": [],
-  "resourceType": "GMScript",
 }

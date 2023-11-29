@@ -27,5 +27,7 @@ Raven  |        |
     `_/_|_.  `-
 	*/
 
-//draw_text_transformed_color(x,y,string(global.bestFezTime),1,1,0,c_black,c_black,c_black,c_black,1);
-//draw_text_transformed_color(x,y+10,string(global.bestConeTime),1,1,0,c_black,c_black,c_black,c_black,1);
+draw_text_transformed_color(x,y,string(global.fezBestTime),1,1,0,c_black,c_black,c_black,c_black,1);
+draw_text_transformed_color(x,y+10,string(global.coneBestTime),1,1,0,c_black,c_black,c_black,c_black,1);
+
+draw_set_color(c_white)

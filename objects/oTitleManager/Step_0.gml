@@ -5,7 +5,7 @@ getInput();
 if (key_space_press) {
 	switch (cursorPos) {
 		case 1:
-			load_game_data(oPersistent.saveSlot);
+			load_game_data();
 			room_goto(rLevelSelect);
 			audio_stop_all();
 		break;

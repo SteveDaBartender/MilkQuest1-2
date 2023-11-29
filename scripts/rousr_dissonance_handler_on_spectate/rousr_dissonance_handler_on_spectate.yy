@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "rousr_dissonance_handler_on_spectate",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Dissonance",
     "path": "folders/Scripts/Dissonance.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "rousr_dissonance_handler_on_spectate",
-  "tags": [],
-  "resourceType": "GMScript",
 }
