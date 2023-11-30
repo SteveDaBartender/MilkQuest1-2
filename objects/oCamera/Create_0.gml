@@ -37,6 +37,8 @@ enum res {
 	mq3
 }
 
+xTilt = 0;
+yTilt = 0;
 step = 0;
 lock = false;
 //if true, the game's res will be set to the monitor res if fullscreened.

@@ -273,6 +273,7 @@
     {"id":{"name":"sMenuSelect","path":"sounds/sMenuSelect/sMenuSelect.yy",},},
     {"id":{"name":"sChristmasTileset","path":"sprites/sChristmasTileset/sChristmasTileset.yy",},},
     {"id":{"name":"sTitleBG1","path":"sprites/sTitleBG1/sTitleBG1.yy",},},
+    {"id":{"name":"fMQ2TextConehead","path":"fonts/fMQ2TextConehead/fMQ2TextConehead.yy",},},
     {"id":{"name":"sFezKick","path":"sprites/sFezKick/sFezKick.yy",},},
     {"id":{"name":"sMilkTransition","path":"sprites/sMilkTransition/sMilkTransition.yy",},},
     {"id":{"name":"jose_gaming_2012","path":"sprites/jose_gaming_2012/jose_gaming_2012.yy",},},

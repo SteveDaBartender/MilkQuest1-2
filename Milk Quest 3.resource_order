@@ -227,6 +227,7 @@
     {"name":"sMenuSelect","order":32,"path":"sounds/sMenuSelect/sMenuSelect.yy",},
     {"name":"sChristmasTileset","order":1,"path":"sprites/sChristmasTileset/sChristmasTileset.yy",},
     {"name":"sTitleBG1","order":16,"path":"sprites/sTitleBG1/sTitleBG1.yy",},
+    {"name":"fMQ2TextConehead","order":8,"path":"fonts/fMQ2TextConehead/fMQ2TextConehead.yy",},
     {"name":"sFezKick","order":12,"path":"sprites/sFezKick/sFezKick.yy",},
     {"name":"sMilkTransition","order":3,"path":"sprites/sMilkTransition/sMilkTransition.yy",},
     {"name":"jose_gaming_2012","order":11,"path":"sprites/jose_gaming_2012/jose_gaming_2012.yy",},

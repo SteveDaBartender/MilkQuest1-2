@@ -14,6 +14,8 @@ global.intro = false;
 global.milkGrabMode = 0;
 global.cheats = false;
 
+global.bestConeTime = 0;
+global.bestFezTime = 0;
 alt = 0;
 
 

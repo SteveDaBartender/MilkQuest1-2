@@ -20,7 +20,7 @@
       char2anim = (sFezheadCutsceneMQ2);
 	  char2Frame = (1);
 	  char1Frame = 0;
-      ctxt = "Thanks for helping me get this piece of choclate! Say, what's your name?";
+      ctxt = "Thanks for helping me get this piece of chocolate! Say, what's your name?";
     }
     if (step == 2) {
 		      bg =(sFezheadHouseMQ2);
@@ -28,7 +28,7 @@
       char2anim = (sFezheadCutsceneMQ2);
       char2Frame = (0);
 	  char1Frame = 1;
-      ctxt = "the name's conehead.";
+      ctxt = "ßthe name's conehead.";
     }
     if (step == 3) {
 		      bg =(sFezheadHouseMQ2);
@@ -44,7 +44,7 @@
       char2anim = (sFezheadCutsceneMQ2);
       char2Frame = (0);
 	  char1Frame = 1;
-      ctxt = "sounds good. time for me to head home.";
+      ctxt = "ßsounds good. time for me to head home.";
     }
     if (step == 5) {
 		char2anim = (sNone);
@@ -52,13 +52,13 @@
 		char1anim = (sConeheadCutsceneMQ2);
       char1Frame = (0);
 	  char2Frame = 0;
-      ctxt = "it's getting a bit late, but i should be able to reach the city before sundown";
+      ctxt = "ßit's getting a bit late, but i should be able to reach the city before sundown";
     }
     if (step == 6) {
 				bg =(sSidewayValleyBgMQ2);
 	  char1Frame = 2;
 	  oPersistent.npcFollower = 0;
-      ctxt = "here we go again.";
+      ctxt = "ßhere we go again.";
     }
     if (step == 7) {
       char1anim = (sNone);
@@ -84,7 +84,7 @@
     }
     if (step == 5) {
       char1Frame = (7);
-      ctxt = "I don't like normal milk, I only drink choclate milk...";
+      ctxt = "I don't like normal milk, I only drink chocolate milk...";
     }
     if (step == 6) {
       char1Frame = (8);
@@ -138,27 +138,27 @@
       } 
       if (step == 3) {
         char2Frame = (2);
-        ctxt = "what the-";
+        ctxt = "ßwhat the-";
       } 
       if (step == 4) {
         char2Frame = (1);
         char1Frame = (0);
-        ctxt = "oh, hello wierd guy. what brings you out of your house today?";
+        ctxt = "ßoh, hello wierd guy. what brings you out of your house today?";
       } 
       if (step == 5) {
         char1Frame = (1);
         char2Frame = (0);
-        ctxt = "I was looking for some choclate for my milk.";
+        ctxt = "I was looking for some chocolate for my milk.";
       } 
       if (step == 6) {
         char1Frame = (1);
         char2Frame = (1);
-        ctxt = "well, there's no stores around here, man.";
+        ctxt = "ßwell, there's no stores around here, man.";
       } 
       if (step == 7) {
         char1Frame = (1);
         char2Frame = (1);
-        ctxt = "there is, however, a carnival up ahead.";
+        ctxt = "ßthere is, however, a carnival up ahead.";
       } 
       if (step == 8) {
         char1Frame = (1);
@@ -168,7 +168,7 @@
       if (step == 9) {
         char1Frame = (1);
         char2Frame = (1);
-        ctxt = "ay, ill tag along too. lets go.";
+        ctxt = "ßay, ill tag along too. lets go.";
       } 
       if (step == 10) {
         ctxt = "";
@@ -182,19 +182,19 @@
         char1anim = (sConeheadCutsceneMQ2);
         char2anim = (sNone);
         char2Frame = (4);
-        ctxt = "hmm, it seems my house is just ahea-";
+        ctxt = "ßhmm, it seems my house is just ahea-";
       } 
       if (step == 2) {
 		 char2anim = (sNone);
 		 bg =(sCarnivalBgMQ2Cone)
         char2Frame = (3);
-        ctxt = "holy crap the entire carnival is on fire";
+        ctxt = "ßholy crap the entire carnival is on fire";
       } 
       if (step == 3) {
 		 char2anim = (sNone);
 		 bg =(sCarnivalBgMQ2Cone)
         char2Frame = (2);
-        ctxt = "i gotta get outta here quick";
+        ctxt = "ßi gotta get outta here quick";
       } 
       if (step == 4) {
         ctxt = "";
@@ -207,11 +207,11 @@
       char1anim = (sFezheadCutsceneMQ2);
       char2anim = (sConeheadCutsceneMQ2);
       char2Frame = (0);
-      ctxt = "what the, that giant spring just flung us into the sky.";
+      ctxt = "ßwhat the, that giant spring just flung us into the sky.";
     } 
     if (step == 2) {
       char1Frame = (5)
-      ctxt = "wait, i can smell it, the choclate. let's \ncontinue on!";
+      ctxt = "ßwait, i can smell it, the chocolate. let's \ncontinue on!";
     }
     if (step == 3) {
 	  oPersistent.npcFollower = 4;
@@ -224,21 +224,21 @@ if (cut == 3 && global.character = oConeheadMQ2) {
       char1anim = (sConeheadCutsceneMQ2);
       char2anim = (sKidCutsceneMQ2);
       char2Frame = (0);
-      ctxt = "im glad i was able to escape the fire. small issue though i live in the city";
+      ctxt = "ß(im glad i was able to escape the fire. small issue though i live in that city)";
     } 
     if (step == 2) {
 	  char1anim = (sConeheadCutsceneMQ2);
       char2anim = (sKidCutsceneMQ2);
       char1Frame = (0)
 	  char2Frame = (3)
-      ctxt = "Hey, Spider Guy, you live in the city??";
+      ctxt = "Hey, Spider Guy, you live down there??";
     }
     if (step == 3) {
 	  char1anim = (sConeheadCutsceneMQ2);
       char2anim = (sKidCutsceneMQ2);
       char1Frame = (1)
 	  char2Frame = (2)
-      ctxt = "well i did. some dude just came in and burned the whole thing down.";
+      ctxt = "ßwell i did. looks like some dude just came in and burned the whole thing down.";
     }
     if (step == 4) {
 	  char1anim = (sConeheadCutsceneMQ2);
@@ -252,7 +252,7 @@ if (cut == 3 && global.character = oConeheadMQ2) {
       char2anim = (sKidCutsceneMQ2);
       char1Frame = (1)
 	  char2Frame = (0)
-      ctxt = "i dunno man... i really dont know anyone who i can chill with...";
+      ctxt = "ßi dunno man... i really dont know anyone who i can chill with...";
     }
     if (step == 6) {
 			char1anim = (sConeheadCutsceneMQ2);
@@ -273,7 +273,7 @@ if (cut == 3 && global.character = oConeheadMQ2) {
       char2anim = (sKidCutsceneMQ2);
       char1Frame = (2)
 	  char2Frame = (1)
-      ctxt = "if thats what my life has come to, then i guess i will. thanks i guess, see ya around.";
+      ctxt = "ßif thats what my life has come to, then i guess i will. thanks i guess, see ya around.";
     }
     if (step == 9) {
       change_room(rFutureSpaceMQ2,0,0,true,global.character);
@@ -323,8 +323,8 @@ if (cut == 4 && global.character = oConeheadMQ2) {
 		var displaymins = string_format(minutes, 2, 0);  
 		var displaysecs = string_digits(string_format(seconds, 2, 0)); 
 		ctxt = "       You beat the Game In: " + string(displaymins) + ":" + carryZero + string(displaysecs)
-		if (global.bestFezTime >= global.levelTimer) {
-			global.bestFezTime = global.levelTimer;
+		if (global.bestConeTime >= global.levelTimer) {
+			global.bestConeTime = global.levelTimer;
 			ctxt += ". /nThat's a new record!"
 		} ctxt = "";
 	}

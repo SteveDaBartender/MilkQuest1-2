@@ -103,20 +103,15 @@ camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 //ALL MQ2 backgrounds
 if (layer_exists("MQ2BG"))
 {
-	layer_x("MQ2BG",x + 400);
-	layer_y("MQ2BG",y + 400);
-}
-
-if (layer_exists("lValleyBG"))
-{
-	layer_x("lValleyBG",x+480);
-	layer_y("lValleyBG",y+270);
-}
-
-if (layer_exists("TowerBG"))
-{
-	layer_x("TowerBG",x+480);
-	layer_y("TowerBG",y+270);
+	if (global.character == oFezheadMQ2 || global.character == oConeheadMQ2) {
+		xTilt = ((room_width/2)-global.character.x)/20 - 50
+		if (!instance_exists(oCameraLock)) yTilt = ((room_height/2)-global.character.y)/20 - 50
+	} else {
+		xTilt = 0;
+		yTilt = 0;
+	}
+	layer_x("MQ2BG",x + 400 + xTilt);
+	layer_y("MQ2BG",y + 400+ yTilt);
 }
 
 if (layer_exists("TilesScroll"))
@@ -124,16 +119,4 @@ if (layer_exists("TilesScroll"))
 	tilemap_y(layer_tilemap_get_id(layer_get_id("TilesScroll")),y - 7725);
 }
 
-if (layer_exists("HubBGTopTrees"))
-{
-	layer_x("HubBGTopTrees",x+880 - global.character.x/5);
-	layer_y("HubBGTopTrees",y-310);
-}
-
-
-if (layer_exists("HubBGTop"))
-{
-	layer_x("HubBGTop",x+880 - global.character.x/100);
-	layer_y("HubBGTop",y+270);
-}
 

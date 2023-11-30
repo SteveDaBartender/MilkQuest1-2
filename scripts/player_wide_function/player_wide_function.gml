@@ -13,21 +13,24 @@ function player_wide_function() {
 	
 	// add !state = states.fishing &&
 	//destroy character if below map
-	if (y > room_height && !npc) {
-		if (global.character = oConeheadMQ2 || global.character = oFezheadMQ2) {
-			if (os_browser = browser_not_a_browser) {
-				room_restart();
+	if (y > room_height) {
+		if (!npc) {
+			if (global.character = oConeheadMQ2 || global.character = oFezheadMQ2) {
+				if (os_browser = browser_not_a_browser) {
+					room_restart();
+					reset_falling_platforms();
+				} else {
+					hp = 0;
+					damage_character();
+					reset_falling_platforms();
+				}
 				reset_falling_platforms();
-			} else {
-				hp = 0;
-				damage_character();
-				reset_falling_platforms();
-			}
-		} else {
-			hp = 0;
-			damage_character();
+			} 
+		}	else {
+			x = global.character.x;
+			y = global.character.y;
+			invincibleTimer = 100;
 		}
-		reset_falling_platforms();
 	}
 
 	if (y > room_height) {
@@ -102,8 +105,8 @@ function player_wide_function() {
 		if (!audio_is_playing(sFunnyRun)) audio_play_sound(sFunnyRun,1,false);	
 	} else audio_stop_sound(sFunnyRun);
 	
-	//change color if HP is 1
-	if (global.character.key_debug && !npc && global.cheats) {
+	//debug toggle
+	if (key_debug && !npc && global.cheats) {
 		if (!global.debug) global.debug = true;
 		else global.debug = false;	
 	}

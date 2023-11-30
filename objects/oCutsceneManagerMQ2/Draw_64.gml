@@ -11,5 +11,12 @@ if (cut != 4) {
 	draw_rectangle_color(0,435,540,540,c_white,c_white,c_white,c_white,false);
 	draw_rectangle_color(0,435,540,540,c_blue,c_blue,c_blue,c_blue,true);
 }
-draw_text_ext_color(30,440,ctxt,30,480,c_black,c_black,c_black,c_black,1);
+var newText = ctxt;
+if (string_char_at(newText,0) == "ß") {
+	newText = string_delete(newText,1,1)
+	draw_set_font(fMQ2TextConehead);
+} else {
+	draw_set_font(fMQ2Text);	
+}
+draw_text_ext_color(30,440,newText,30,480,c_black,c_black,c_black,c_black,1);
 draw_rectangle_color(541,0,9999,9999,c_black,c_black,c_black,c_black,false);
