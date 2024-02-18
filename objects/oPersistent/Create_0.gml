@@ -14,9 +14,9 @@ saveVersion = 0.1;
 
 if (os_browser = browser_not_a_browser) {
 	show_debug_message("Enabling RPS")
-	rousr_dissonance_create(919686300548890635);
-	rousr_dissonance_set_details("In Menus");
-	rousr_dissonance_set_state("Choosing a Game");
+	//rousr_dissonance_create(919686300548890635);
+	//rousr_dissonance_set_details("In Menus");
+	//rousr_dissonance_set_state("Choosing a Game");
 }
 
 global.fezBestTime = 0;

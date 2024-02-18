@@ -52,7 +52,7 @@
 		char1anim = (sConeheadCutsceneMQ2);
       char1Frame = (0);
 	  char2Frame = 0;
-      ctxt = "ßit's getting a bit late, but i should be able to reach the city before sundown";
+      ctxt = "ßit's getting a bit late, but i should be able to reach the city before sundown.";
     }
     if (step == 6) {
 				bg =(sSidewayValleyBgMQ2);
@@ -72,7 +72,7 @@
       char1anim = (sFezheadCutsceneMQ2);
       char2anim = (sNone);
 	  oPersistent.npcFollower = 0;
-      ctxt = "Well, looks like my journey to the void is finally over.";
+      ctxt = "Well, it looks like my journey to the void is finally over.";
     }
     if (step == 3) {
       char1Frame = (1);
@@ -134,7 +134,7 @@
       if (step == 2) {
         bg =(sSidewayValleyBgMQ2);
         char2Frame = (3);
-        ctxt = "OY MATE LOOK OVER HERE";
+        ctxt = "OY MATE LOOK OVER HERE!";
       } 
       if (step == 3) {
         char2Frame = (2);
@@ -143,7 +143,7 @@
       if (step == 4) {
         char2Frame = (1);
         char1Frame = (0);
-        ctxt = "ßoh, hello wierd guy. what brings you out of your house today?";
+        ctxt = "ßoh, hello weird guy. what brings you out of your house today?";
       } 
       if (step == 5) {
         char1Frame = (1);
@@ -188,13 +188,13 @@
 		 char2anim = (sNone);
 		 bg =(sCarnivalBgMQ2Cone)
         char2Frame = (3);
-        ctxt = "ßholy crap the entire carnival is on fire";
+        ctxt = "ßholy crap the entire carnival is on fire.";
       } 
       if (step == 3) {
 		 char2anim = (sNone);
 		 bg =(sCarnivalBgMQ2Cone)
         char2Frame = (2);
-        ctxt = "ßi gotta get outta here quick";
+        ctxt = "ßi gotta get outta here quick.";
       } 
       if (step == 4) {
         ctxt = "";
@@ -211,7 +211,7 @@
     } 
     if (step == 2) {
       char1Frame = (5)
-      ctxt = "ßwait, i can smell it, the chocolate. let's \ncontinue on!";
+      ctxt = "Wait, I can smell it, the chocolate! Let's \ncontinue on!";
     }
     if (step == 3) {
 	  oPersistent.npcFollower = 4;
@@ -219,8 +219,9 @@
     }
   }
 if (cut == 3 && global.character = oConeheadMQ2) {
+	bg =(sFutureSpaceBgMQ2Cone);
     if (step == 1) {
-      bg =(sFutureSpaceBgMQ2);
+      bg =(sFutureSpaceBgMQ2Cone);
       char1anim = (sConeheadCutsceneMQ2);
       char2anim = (sKidCutsceneMQ2);
       char2Frame = (0);
@@ -266,7 +267,7 @@ if (cut == 3 && global.character = oConeheadMQ2) {
       char2anim = (sKidCutsceneMQ2);
       char1Frame = (3)
 	  char2Frame = (3)
-      ctxt = "There's a cardboard box I thew out just up ahead! You can sleep there for awhile";
+      ctxt = "There's a cardboard box I thew out just up ahead! You can sleep there for a while.";
     }
     if (step == 8) {
 		char1anim = (sConeheadCutsceneMQ2);
@@ -280,6 +281,10 @@ if (cut == 3 && global.character = oConeheadMQ2) {
     }
   }
   global.levelTimer += (1 / room_speed); 
+  if (cut == 4 && !playedSong) {
+	audio_play_sound(sEndgame,0,false);
+	playedSong = true;
+  }
 if (cut == 4 && global.character = oFezheadMQ2) {
 	if (step == 1) {
 		bg =(sEndScreenBgMQ2);
@@ -303,6 +308,7 @@ if (cut == 4 && global.character = oFezheadMQ2) {
 		ctxt = ""
 		global.debug = false;
 		save_game_data();
+		audio_stop_all()
 		room_goto(rTitleSreenMQ2);
 	}
  }
@@ -311,9 +317,7 @@ if (cut == 4 && global.character = oConeheadMQ2) {
 	if (step == 1) {
 		
 		global.beatMQ2 = 1;
-		save_game_data();
-		
-		bg =(sEndScreenBgMQ2);
+		bg =(sEndScreenBgConeMQ2);
 		char1anim = (sNone);
 		var carryZero = "";
 		global.levelTimer -= (1 / room_speed);  
@@ -333,6 +337,8 @@ if (cut == 4 && global.character = oConeheadMQ2) {
 		char1anim = (sNone);
 		ctxt = ""
 		global.debug = false;
+		audio_stop_all()
+		save_game_data();
 		room_goto(rTitleSreenMQ2);
 	}
  }

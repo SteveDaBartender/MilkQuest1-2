@@ -28,5 +28,5 @@ entranceNum = "Not Implemented";
 
 oPersistent.npcFollower = 0;
 
-rousr_dissonance_set_state("Level Select");
-rousr_dissonance_set_details("In Menus");
+//rousr_dissonance_set_state("Level Select");
+//rousr_dissonance_set_details("In Menus");

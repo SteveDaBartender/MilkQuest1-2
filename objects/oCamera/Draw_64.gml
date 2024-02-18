@@ -27,6 +27,7 @@ if (global.debug){
 	draw_text(0,400, string(room_next(room)));
 	draw_text(880,0 ,string(fps) + "Capped FPS");
 	draw_text(800,20 ,string(realFpsAvg) + " Total FPS");
+	draw_text(0,420 ,string(char.image_xscale) + " Total FPS");
 	//draw_sprite_ext(mask_index,0,x,y,1,1,0,c_aqua,0.5);
 	
 }

@@ -7,4 +7,4 @@ if (room = rSidewayValleyMQ2) {
 	c = c_white
 }
 draw_set_font(fMQ2Text)
-draw_text_color(110,45,global.milk,c,c,c,c,1);
+draw_text_color(130,45,global.milk,c,c,c,c,1);

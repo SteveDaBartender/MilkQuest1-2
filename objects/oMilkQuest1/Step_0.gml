@@ -6,8 +6,8 @@ if (oPersistent.key_space_press && cool > 10) {
 		cool++;
 switch (screen) {
 	case 0: //menu
-		rousr_dissonance_set_details("Playing Milk Quest 1");
-		rousr_dissonance_set_state("Title Screen");
+		//rousr_dissonance_set_details("Playing Milk Quest 1");
+		//rousr_dissonance_set_state("Title Screen");
 		audio = false
 		audio_stop_all();
 		txt = "menu state";
@@ -45,8 +45,8 @@ switch (screen) {
 		}
 		break;
 	case 1: //c1
-		rousr_dissonance_set_details("Playing Milk Quest 1");
-		rousr_dissonance_set_state("Chapter 1");
+		//rousr_dissonance_set_details("Playing Milk Quest 1");
+		//rousr_dissonance_set_state("Chapter 1");
 	if (count = 0) {
 		txt = "man I sure am hungry. i hope nothing inconvenient happens to me.";
 		if (!audio && screen != 0) audio_play_sound(sChapter1,0,false);	
@@ -74,8 +74,8 @@ switch (screen) {
 		}
 		break;
 	case 2: //c2
-		rousr_dissonance_set_details("Playing Milk Quest 1");
-		rousr_dissonance_set_state("Chapter 2");
+		//rousr_dissonance_set_details("Playing Milk Quest 1");
+		//rousr_dissonance_set_state("Chapter 2");
 		if (count == 0) {
 			txt = "....."
 			if (!audio) audio_play_sound(sChapter2,0,false);	
@@ -101,8 +101,8 @@ switch (screen) {
 		}
 		break;
 	case 3: //c3
-	rousr_dissonance_set_details("Playing Milk Quest 1");
-	rousr_dissonance_set_state("Chapter 3");
+	//rousr_dissonance_set_details("Playing Milk Quest 1");
+	//rousr_dissonance_set_state("Chapter 3");
 	if (count == 0) {
 		txt = "who are you?"
 		if (!audio) audio_play_sound(sChapter3,0,false);		
@@ -136,8 +136,8 @@ switch (screen) {
 		}
 		break;
 	case 4: //end
-		rousr_dissonance_set_details("Playing Milk Quest 1");
-		rousr_dissonance_set_state("Ending");
+		//rousr_dissonance_set_details("Playing Milk Quest 1");
+		//rousr_dissonance_set_state("Ending");
 			txt = "win state";
 			global.beatMQ1 = 1;
 			save_game_data();

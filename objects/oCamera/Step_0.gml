@@ -103,7 +103,8 @@ camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 //ALL MQ2 backgrounds
 if (layer_exists("MQ2BG"))
 {
-	if (global.character == oFezheadMQ2 || global.character == oConeheadMQ2) {
+	if (global.character == oFezheadMQ2 || global.character == oConeheadMQ2) && instance_exists(global.character) {
+		
 		xTilt = ((room_width/2)-global.character.x)/20 - 50
 		if (!instance_exists(oCameraLock)) yTilt = ((room_height/2)-global.character.y)/20 - 50
 	} else {

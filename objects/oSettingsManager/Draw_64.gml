@@ -6,46 +6,48 @@ draw_set_color(c_black);
 //back "button"
 draw_roundrect(16,10,128,50,false);
 //settings
-draw_roundrect(16,70,272,228,false);
+draw_roundrect(16,60,272,248,false);
 
 //credits
 draw_set_font(fTitleScreen);
-draw_roundrect(16,240,272,528,false);	
+draw_roundrect(16,250,272,528,false);	
 //music
-draw_roundrect(304,240,528,528,false);	
+draw_roundrect(304,250,528,528,false);	
 
 //the new normal
 draw_set_alpha(1);	
 draw_set_color(c_white);
 draw_text_transformed(30,17,"Return",0.6,0.6,0);
 //credtis text
-draw_text_transformed(30,250,"Credits",1,1,0);
-draw_text_transformed(30,290,"Programming",0.5,0.5,0);
-draw_text_transformed(30,310,"Steve the Bartender",0.33,0.33,0);
-draw_text_transformed(30,330,"Music",0.55,0.5,0);
-draw_text_transformed(30,350,"Steve the Bartender (Milk Quest 1)",0.33,0.33,0);
-draw_text_transformed(30,365,"Varadox (Milk Quest 2)",0.33,0.33,0);
-draw_text_transformed(30,380,"Caramel (Menu)",0.33,0.33,0);
-draw_text_transformed(30,400,"Planning & Testing",0.5,0.5,0);
-draw_text_transformed(30,420,"Steve the Bartender",0.33,0.33,0);
-draw_text_transformed(30,435,"Caramel",0.33,0.33,0);
-draw_text_transformed(30,455,"Special Thanks",0.5,0.5,0);
-draw_text_transformed(30,475,"rou.sr (Discord Rich Presence)",0.33,0.33,0);
-draw_text_transformed(30,490,"GMLive",0.33,0.33,0);
+draw_text_transformed(30,260,"Credits",1,1,0);
+draw_text_transformed(30,300,"Programming",0.5,0.5,0);
+draw_text_transformed(30,320,"Steve the Bartender",0.33,0.33,0);
+draw_text_transformed(30,340,"Music",0.55,0.5,0);
+draw_text_transformed(30,360,"Steve the Bartender (Milk Quest 1)",0.33,0.33,0);
+draw_text_transformed(30,375,"Varadox (Milk Quest 2)",0.33,0.33,0);
+draw_text_transformed(30,390,"Quackers (Menu)",0.33,0.33,0);
+draw_text_transformed(30,410,"Planning & Testing",0.5,0.5,0);
+draw_text_transformed(30,430,"Steve the Bartender",0.33,0.33,0);
+draw_text_transformed(30,445,"Quackers",0.33,0.33,0);
+draw_text_transformed(30,465,"Special Thanks",0.5,0.5,0);
+//draw_text_transformed(30,475,"NekoPresence",0.33,0.33,0);
+draw_text_transformed(30,485,"GMLive",0.33,0.33,0);
 draw_text_transformed(30,510,"v" + string(GM_version),0.33,0.33,0);
 draw_text_transformed(90,510,"milkquestgame@gmail.com",0.33,0.33,0);
 //volume meters
-draw_text_transformed(30,80,"Volume",1,1,0);
-draw_text_transformed(30,120,"Music",0.5,0.5,0);
-draw_text_transformed(30,160,"Sound Effects",0.5,0.5,0);
+draw_text_transformed(30,70,"Volume",1,1,0);
+draw_text_transformed(30,110,"Music",0.5,0.5,0);
+draw_text_transformed(30,150,"Sound Effects",0.5,0.5,0);
+draw_text_transformed(30,193,"Controls",0.5,0.5,0);
+var hehehe = 20;
 if (gameVer = browser_not_a_browser) {
-	draw_text_transformed(30,203,"Fullscreen",0.5,0.5,0);
-	draw_roundrect(240,205,260,225,true)
+	draw_text_transformed(30,203+hehehe,"Fullscreen",0.5,0.5,0);
+	draw_roundrect(240,205+hehehe,260,225+hehehe,true)
 	var colors = make_color_rgb(121,161,190)
-	if (window_get_fullscreen()) draw_roundrect_color(260,205,240,225,colors,colors,false)
+	if (window_get_fullscreen()) draw_roundrect_color(260,205+hehehe,240,225+hehehe,colors,colors,false)
 	draw_set_alpha(0.4);
-	draw_roundrect(240.5,224.5,259.5,205.5,true)
-	draw_roundrect(239.5,225.5,260.5,204.5,true)
+	draw_roundrect(240.5,224.5+hehehe,259.5,205.5+hehehe,true)
+	draw_roundrect(239.5,225.5+hehehe,260.5,204.5+hehehe,true)
 	draw_set_alpha(1);
 }
 draw_set_alpha(0.4);

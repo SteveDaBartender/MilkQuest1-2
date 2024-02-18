@@ -56,6 +56,7 @@ function player_wide_function() {
 	//spring collision
 	if (place_meeting(x,y, oSpring)) {
 		vsp = -20;
+		if (npc) vsp -= 10
 		global.character.roll = false;
 		audio_play_sound(sSpring,1,false);
 		if (room = rCuriousCarnivalMQ2 && x>2300) vsp = -40; //spaghet

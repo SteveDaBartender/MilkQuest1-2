@@ -12,7 +12,8 @@ songList = [
 	[sFutureSpaceMQ2Song,"Future Space"],
 	[sSidewayValleyMQ2SongConehead,"Sideway Valley C Mix"],
 	[sNewSongMQ2Song,"Liquid Snowfall"],
-	[sFutureSpaceMQ2SongConehead,"Future Space C Mix"]
+	[sFutureSpaceMQ2SongConehead,"Future Space C Mix"],
+	[sEndgame,"Lost Signal"]
 ]
 currentlyPlaying = 0;
 lol = 0;

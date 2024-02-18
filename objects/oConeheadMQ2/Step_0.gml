@@ -20,7 +20,7 @@ if (hsp < -9) hsp = -9;
 if ((place_meeting(x,y+1,oCollide) || position_meeting(x,y+1,o1Way)) && key_space_press && !place_meeting(x,y-13,oCollide))
 {
 	vsp = -18;
-	if (npc) vsp -= 4;
+	if (npc) vsp -= 6;
 	roll = false;
 	jumpExtendable = 1;
 	audio_play_sound(sConeJump, 0, false);

@@ -19,6 +19,6 @@ if (enablemq0) {
 step = 0;
 loly = 300;
 lock = false;
-rousr_dissonance_set_details("In Menus");
-rousr_dissonance_set_state("Choosing a Game");
-rousr_dissonance_set_large_image("menu","glup shitto");
+//rousr_dissonance_set_details("In Menus");
+//rousr_dissonance_set_state("Choosing a Game");
+//rousr_dissonance_set_large_image("menu","glup shitto");

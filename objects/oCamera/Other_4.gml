@@ -11,28 +11,28 @@ if (room = rTowerEntrance) {
 switch (room){
 	case rSidewayValleyMQ2:
 		audio_stop_all()
-		rousr_dissonance_set_details("Playing Milk Quest 2");
+		//rousr_dissonance_set_details("Playing Milk Quest 2");
 		if (global.character != oConeheadMQ2) {
 			audio_play_sound(sSidewayValleyMQ2Song, 0, true);
 			global.currentSong = sSidewayValleyMQ2Song;
-			rousr_dissonance_set_state("Sideway Valley (Fezhead)");
+			//rousr_dissonance_set_state("Sideway Valley (Fezhead)");
 		} else {
 			audio_play_sound(sSidewayValleyMQ2SongConehead, 0, true);
 			global.currentSong = sSidewayValleyMQ2SongConehead;
-			rousr_dissonance_set_state("Sideway Valley (Conehead)");
+			//rousr_dissonance_set_state("Sideway Valley (Conehead)");
 		}
 		lock = true;
 	break;
 
 	case rFutureSpaceMQ2:
 		audio_stop_all()
-		rousr_dissonance_set_details("Playing Milk Quest 2");
+		//rousr_dissonance_set_details("Playing Milk Quest 2");
 		if (global.character != oConeheadMQ2) {
 			audio_play_sound(sFutureSpaceMQ2Song, 0, true);
 			global.currentSong = sFutureSpaceMQ2Song;
-			rousr_dissonance_set_state("Future Space (Fezhead)");
+			//rousr_dissonance_set_state("Future Space (Fezhead)");
 		} else {
-			rousr_dissonance_set_state("Future Space (Conehead)");
+			//rousr_dissonance_set_state("Future Space (Conehead)");
 			audio_play_sound(sFutureSpaceMQ2SongConehead, 0, true);
 			global.currentSong = sFutureSpaceMQ2SongConehead;
 		}
@@ -49,15 +49,15 @@ switch (room){
 	break;
 	case rCuriousCarnivalMQ2:
 		audio_stop_all()
-		rousr_dissonance_set_details("Playing Milk Quest 2");
+		//rousr_dissonance_set_details("Playing Milk Quest 2");
 		if (global.character = oConeheadMQ2) {
 			audio_play_sound(sNewSongMQ2Song, 0, true);
 			global.currentSong = sNewSongMQ2Song;
-			rousr_dissonance_set_state("Curious Carnival (Conehead)");
+			//rousr_dissonance_set_state("Curious Carnival (Conehead)");
 		} else {
 			audio_play_sound(sCuriousCarnivalMQ2Song, 0, true);
 			global.currentSong = sCuriousCarnivalMQ2Song;
-			rousr_dissonance_set_state("Curious Carnival (Fezhead)");
+			//rousr_dissonance_set_state("Curious Carnival (Fezhead)");
 		}
 	break;
 }

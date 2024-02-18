@@ -52,6 +52,8 @@ standard_collision();
 
 player_wide_function();
 
+image_xscale = clamp(image_xscale,-1,1)
+image_yscale = clamp(image_yscale,-1,1)
 
 // ANIMATION //
 if (!place_meeting(x,y+1,oCollide))

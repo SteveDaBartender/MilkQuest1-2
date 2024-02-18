@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rMilkQuest1",
-  "creationCodeFile": "${project_dir}/rooms/rMilkQuest1/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rMilkQuest1/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //initiate discord RPC
-rousr_dissonance_create(919686300548890635)
+//rousr_dissonance_create(919686300548890635)
 audio_group_set_gain(Music,0.5,0)
 //audio_play_sound(sMenu,0,true);
 step = 0;

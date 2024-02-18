@@ -3,7 +3,7 @@ help2 = "(cont) As well, nost of this shit is just copy and pasted from the orig
 help3 = "(cont2)the terrible elif chains here are because i forgot lists existed and the applab didn't have dictionaries. WHY DIDNT I JUTS USE A LIST IM SO ANGRY"
 HELP4 = "(count dracula 3) i got the text engine working in literally 20 minutes (the part i could copy paste) 80% of my time was spent just redrawing sprites, and getting them to draw in the right places."
 
-rousr_dissonance_set_large_image("mq1", "Milk Quest 1")
+//rousr_dissonance_set_large_image("mq1", "Milk Quest 1")
 audio = true;
 txt = "text is broken lol";
 cursorPos = 0;

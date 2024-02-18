@@ -9,5 +9,6 @@ char1Frame = 0;
 char2anim = sNone;
 char2Frame = 0;
 bg = sSidewayValleyBgMQ2;
+playedSong = false;
 draw_set_font(fMQ2Text);
 audio_stop_all();

@@ -5,18 +5,18 @@ and that Mario must take a bus to the next stage. In the Mushroom Kingdom, buses
 operate on an oddly specific schedule, such that every 21 frames a bus departs. 
 When Mario reaches the end of a stage, he must wait for the next bus to depart.*/
 if (key_up && cool > 21) {
-	cursorPos = clamp(cursorPos-1,0,4);
+	cursorPos = clamp(cursorPos-1,0,5);
 	cool = 0;
 	//spaghetti fix because i am too lazy rn to make a actual patch :)
-	if (cursorPos == 3 && gameVer != browser_not_a_browser) {
-		cursorPos = 2	
+	if (cursorPos == 4 && gameVer != browser_not_a_browser) {
+		cursorPos = 3	
 	}
 }
 if (key_ddown && cool > 21) {
-	cursorPos = clamp(cursorPos+1,0,4);
+	cursorPos = clamp(cursorPos+1,0,5);
 	cool = 0;
-	if (cursorPos == 3 && gameVer != browser_not_a_browser) {
-		cursorPos = 4	
+	if (cursorPos == 4 && gameVer != browser_not_a_browser) {
+		cursorPos = 5	
 	}
 }
 //increment the cooldown
@@ -47,8 +47,8 @@ switch (cursorPos) {
 	case 1:
 		goalX1=16
 		goalX2=272
-		goalY1=118
-		goalY2=160
+		goalY1=108
+		goalY2=154
 		if (key_right) {
 			global.volMus = (clamp(global.volMus+0.02,0,1))
 		} else if (key_left) {
@@ -59,8 +59,8 @@ switch (cursorPos) {
 	case 2:
 		goalX1=16
 		goalX2=272
-		goalY1=158
-		goalY2=200
+		goalY1=148
+		goalY2=194
 		if (key_right) {
 			global.volSFX = (clamp(global.volSFX+0.02,0,1))
 		} else if (key_left) {
@@ -71,8 +71,20 @@ switch (cursorPos) {
 	case 3:
 		goalX1=16
 		goalX2=272
-		goalY2=228
-		goalY1=200
+		goalY2=218
+		goalY1=190
+		if (key_space_press) {
+			oFade.state = 1;
+			//audio_sound_gain(currentlyPlaying,0,500);
+			oFade.destination = rMainMenu;
+			//save_game_data();
+		}
+		break;
+	case 4:
+		goalX1=16
+		goalX2=272
+		goalY2=250
+		goalY1=220
 		if (gameVer = browser_not_a_browser) {
 			if (key_space_press) {
 				if (window_get_fullscreen()) {
@@ -85,7 +97,7 @@ switch (cursorPos) {
 			
 		}
 		break;
-	case 4:
+	case 5:
 		goalX1=304
 		goalX2=528
 		goalY1=240
