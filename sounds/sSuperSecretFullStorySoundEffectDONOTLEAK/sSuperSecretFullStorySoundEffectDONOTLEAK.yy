@@ -1,26 +1,28 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sSuperSecretFullStorySoundEffectDONOTLEAK",
-  "audioGroupId": {
-    "name": "SFX",
-    "path": "audiogroups/SFX",
+  "$GMSound":"",
+  "%Name":"sSuperSecretFullStorySoundEffectDONOTLEAK",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
   },
-  "bitDepth": 1,
-  "bitRate": 128,
-  "compression": 1,
-  "conversionMode": 0,
-  "duration": 0.808073,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":0.808073,
+  "name":"sSuperSecretFullStorySoundEffectDONOTLEAK",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds/Sounds.yy",
   },
-  "preload": false,
-  "sampleRate": 44100,
-  "soundFile": "sSuperSecretFullStorySoundEffectDONOTLEAK.wav",
-  "tags": [
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sSuperSecretFullStorySoundEffectDONOTLEAK.wav",
+  "tags":[
     "gay",
   ],
-  "type": 0,
-  "volume": 1.0,
+  "type":0,
+  "volume":1.0,
 }
