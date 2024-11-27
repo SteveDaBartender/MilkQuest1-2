@@ -38,7 +38,7 @@ draw_text_transformed(90,510,"milkquestgame@gmail.com",0.33,0.33,0);
 draw_text_transformed(30,70,"Volume",1,1,0);
 draw_text_transformed(30,110,"Music",0.5,0.5,0);
 draw_text_transformed(30,150,"Sound Effects",0.5,0.5,0);
-draw_text_transformed(30,193,"Controls",0.5,0.5,0);
+//draw_text_transformed(30,193,"Controls",0.5,0.5,0);
 var hehehe = 20;
 if (gameVer = browser_not_a_browser) {
 	draw_text_transformed(30,203+hehehe,"Fullscreen",0.5,0.5,0);

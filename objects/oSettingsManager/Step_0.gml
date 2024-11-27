@@ -68,6 +68,7 @@ switch (cursorPos) {
 		}
 		audio_group_set_gain(SFX,global.volSFX,0)
 		break;
+		/*
 	case 3:
 		goalX1=16
 		goalX2=272
@@ -76,11 +77,12 @@ switch (cursorPos) {
 		if (key_space_press) {
 			oFade.state = 1;
 			//audio_sound_gain(currentlyPlaying,0,500);
-			oFade.destination = rMainMenu;
+			oFade.destination = rControls;
 			//save_game_data();
 		}
 		break;
-	case 4:
+		*/
+	case 3:
 		goalX1=16
 		goalX2=272
 		goalY2=250
@@ -97,7 +99,7 @@ switch (cursorPos) {
 			
 		}
 		break;
-	case 5:
+	case 4:
 		goalX1=304
 		goalX2=528
 		goalY1=240
@@ -123,3 +125,5 @@ switch (cursorPos) {
 
 rotationStep = 3.3*pitch;
 image_angle += rotationStep;
+
+code = "MQ12"

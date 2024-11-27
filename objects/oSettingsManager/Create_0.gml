@@ -36,3 +36,5 @@ goalX2=0;
 goalY1=0;
 goalY2=0;
 cool = 0;
+
+code = "";
